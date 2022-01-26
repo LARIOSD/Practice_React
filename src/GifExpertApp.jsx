@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import AddCategory from './components/AddCategory';
+import GifGrid from './components/GifGrid';
 
-export function GifExpertApp() {
+function GifExpertApp() {
+  const [categories, setCategories] = useState([]);
+
   return (
     <>
       <h3>GifExpertApp</h3>
+      <AddCategory setCategories={setCategories} />
       <hr />
+      { categories.map((category) => <GifGrid key={category} category={category} />) }
     </>
   );
 }

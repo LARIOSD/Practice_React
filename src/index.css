@@ -5,3 +5,32 @@ html,body {
     font-size: 1.3rem;
     font-family: "Helvetica Neve", Arial, Helvetica, sans-serif;
 }
+
+input{
+    color: gray;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.card-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    align-content: center;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin-bottom: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.card p{
+    padding: 5px;
+    text-align: center;
+}
+.card img{
+    max-width: 100%;
+}
