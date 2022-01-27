@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PrimeraApp from './PrimeraApp';
+import App from './App';
 
 import './index.css';
 
-const divRoot = document.querySelector('#root');
+const root = document.querySelector('#root');
 
-ReactDOM.render(<PrimeraApp />, divRoot);
+ReactDOM.render(<App />, root);
