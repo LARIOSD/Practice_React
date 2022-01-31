@@ -10,12 +10,10 @@ export default function useFetchGists(category) {
   useEffect(() => {
     getGifs(category)
       .then((imgs) => {
-        setTimeout(() => {
-          setState({
-            data    : imgs,
-            loading : false,
-          });
-        }, 2500);
+        setState({
+          data    : imgs,
+          loading : false,
+        });
       });
   }, [category]);
 

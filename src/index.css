@@ -34,3 +34,8 @@ input{
 .card img{
     max-height: 170px;
 }
+
+.animate__pulse,
+.animate__flash{
+    border: none;
+}
