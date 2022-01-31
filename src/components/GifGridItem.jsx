@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-export default function GifGridItem({ title, url }) {
+export default function GifGridItem({ url, title }) {
   return (
     <div className="card">
       <img src={url} alt={title} />

@@ -1,21 +1,20 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { PropTypes } from 'prop-types';
 import GifGridItem from './GifGridItem';
-import getGifs from '../helpers/getGifs';
+import useFetchGists from '../hooks/useFetchGifs';
 
 export default function GifGrid({ category }) {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    getGifs(category).then(setImages);
-  }, [category]);
+  const { data : images, loading } = useFetchGists(category);
 
   return (
     <>
       <h3>{category}</h3>
+
+      {loading && <p>Loading...</p>}
+
       <div className="card-grid">
-        {images.map((img) => (<GifGridItem key={img.id} {...img} />))}
+        {images.map((img) => <GifGridItem key={img.id} {...img} />)}
       </div>
     </>
   );
