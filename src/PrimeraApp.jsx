@@ -1,12 +1,15 @@
 import React from 'react';
+import ListOfGifs from './components/listOfGits/ListOfGifs';
+
+import './index.css';
 
 function PrimeraApp() {
-  const saludo = 'Hola saludo';
   return (
-    <>
-      <h1>{saludo}</h1>
-      <p>Mi primera clase</p>
-    </>
+    <div className="App">
+      <section className="App-content">
+        <ListOfGifs keyword="anime" />
+      </section>
+    </div>
   );
 }
 
