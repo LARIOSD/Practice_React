@@ -1,0 +1,19 @@
+.App {
+    text-align: center;
+}
+
+.App-content {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px +2vmin);
+    justify-content: center;
+    min-height: 100vh;
+}
+
+a{
+    color:"#0pf";
+    font-size: 32px;
+}
