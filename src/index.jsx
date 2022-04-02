@@ -6,4 +6,9 @@ import './index.css';
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.render(<PrimeraApp />, divRoot);
+ReactDOM.render(
+  <React.StrictMode>
+    <PrimeraApp />
+  </React.StrictMode>,
+  divRoot,
+);

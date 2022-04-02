@@ -5,11 +5,21 @@ import getGifs from '../../hooks/getGifs';
 
 export default function ListOfGifs({ params }) {
   const { keyword } = params;
+  const [loading, setLoading] = useState(false);
+
   const [gifs, setGifs] = useState([]);
 
   useEffect(() => {
-    getGifs({ keyword }).then((gifList) => setGifs(gifList));
+    setLoading(true);
+    getGifs({ keyword }).then((gifList) => {
+      setGifs(gifList);
+      setLoading(false);
+    });
   }, [keyword]);
+
+  if (loading) {
+    return <i>...Loading</i>;
+  }
 
   return (
     <>
