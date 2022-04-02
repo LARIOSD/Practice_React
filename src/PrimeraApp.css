@@ -13,6 +13,12 @@
     min-height: 100vh;
 }
 
+.gifLogo {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
 a{
     color:"#0pf";
     font-size: 32px;
