@@ -4,7 +4,7 @@
 
 .App-content {
     align-items: center;
-    background-color: black;
+    background-color: #a9e7f7;
     color: white;
     display: flex;
     flex-direction: column;
@@ -14,9 +14,10 @@
 }
 
 .gifLogo {
-    margin: auto;
+    margin: 25px;
     width: 100px;
     height: 100px;
+    cursor: pointer;
 }
 
 a{

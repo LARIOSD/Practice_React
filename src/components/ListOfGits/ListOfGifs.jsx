@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
-import Gif from '../gif/Gif';
+import Gif from '../Gif/Gif';
 import getGifs from '../../hooks/getGifs';
 
 export default function ListOfGifs({ params }) {
