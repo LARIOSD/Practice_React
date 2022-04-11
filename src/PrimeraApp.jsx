@@ -11,13 +11,16 @@ function PrimeraApp() {
   return (
     <div className="App">
       <section className="App-content">
-        <Link to="/">
-          <img className="gifLogo" alt="Figgy log" src={imgGif} />
-        </Link>
-
-        <Route path="/" component={Home} />
-        <Route path="/gif/:id" component={Detail} />
-        <Route path="/search/:keyword" component={SearchResults} />
+        <div className="content-header">
+          <Link to="/">
+            <img className="gifLogo" alt="Figgy log" src={imgGif} />
+          </Link>
+        </div>
+        <div className="content-body">
+          <Route path="/" component={Home} />
+          <Route path="/gif/:id" component={Detail} />
+          <Route path="/search/:keyword" component={SearchResults} />
+        </div>
       </section>
     </div>
   );

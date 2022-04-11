@@ -1,0 +1,9 @@
+.listGifs{
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+    column-count: 6;
+    -webkit-column-width: 220px;
+    -moz-column-width: 220px;
+    column-width: 220px;
+}

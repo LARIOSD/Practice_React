@@ -1,0 +1,28 @@
+.link{
+    color: floralwhite;
+ text-decoration: none;
+}
+
+.list{
+    background-color: #ff8398;
+    border-radius: 0%;
+    border-style: dotted;
+    box-shadow: 14px 0px 23px -16px rgba(0,0,0,0.80);
+    justify-content: center;
+    list-style:none;
+    margin-bottom: 12px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul{
+    padding:0;
+    text-decoration: none;
+}
+
+input{
+    border-color: #ff8398;
+    text-align: center;
+    font-family: cursive;
+}

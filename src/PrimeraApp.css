@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     font-size: calc(10px +2vmin);
-    justify-content: center;
     min-height: 100vh;
 }
 
@@ -18,6 +17,14 @@
     width: 100px;
     height: 100px;
     cursor: pointer;
+}
+
+.content-body{
+    height: 70%;
+}
+
+.content-header{
+    height: 30%;
 }
 
 a{

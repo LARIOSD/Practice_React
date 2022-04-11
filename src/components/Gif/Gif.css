@@ -1,19 +1,12 @@
 .Gif {
-    border-radius: 6px;
-    border: 1px solid #eee;
-    color: #fff;
-    display: 16px;
-    flex-direction: column;
-    margin: 16px;
-    padding: 32px;
-    width: 100%;
-} 
-
+    margin: 1px;
+}
 
 .Gif h4 {
     margin: 0;
 }
 
 .Gif img {
-    object-fit: contain;
+    max-width: 200px;
+    border-radius: 10%;
 }
