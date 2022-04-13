@@ -8,7 +8,6 @@ import ListOfGifs from '../../components/ListOfGits/ListOfGifs';
 export default function SearchResults({ params }) {
   const { keyword } = params;
   const [loading, setLoading] = useState(false);
-
   const [gifs, setGifs] = useState([]);
 
   useEffect(() => {
@@ -23,9 +22,14 @@ export default function SearchResults({ params }) {
 
   return (
     <div>
+      {/* <div>
+        <button type="button" onClick={}> +1 </button>
+      </div> */}
+
       {loading
         ? <Spinner loading={loading}/>
         : <ListOfGifs gifs={gifs} />}
+
     </div>
   );
 }

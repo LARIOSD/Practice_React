@@ -10,3 +10,6 @@
     max-width: 200px;
     border-radius: 10%;
 }
+.Gif img:hover {
+    opacity: 0.5;
+}

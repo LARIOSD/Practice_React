@@ -21,7 +21,10 @@ export default function Home() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input placeholder="Search a gif here..." onChange={handleChage} type="text" value={keyword} />
+        <label htmlFor="Search">
+          Search
+          <input id="Search" placeholder="Search a gif here..." onChange={handleChage} type="text" value={keyword} />
+        </label>
       </form>
       <h3 className="App-title">Los gifs más populares</h3>
       <ul>
