@@ -1,14 +1,25 @@
-const nextPage = (page, limit) => {
-  const nextpage = page === limit ? page : page + 1;
-  return nextpage;
-};
+function getNextPage(page, limit, total) {
+  const lastPage = total / limit;
 
-const prevPage = (page) => {
-  const prevpage = page === 0 ? page : page - 1;
-  return prevpage;
-};
+  if (page >= lastPage) {
+    return null;
+  }
+  return page + 1;
+}
 
-export {
-  nextPage,
-  prevPage,
-};
+function getPreviousPage(page) {
+  if (page <= 1) {
+    return null;
+  }
+  return page - 1;
+}
+
+export default function pagination(page, limit, count) {
+  return {
+    currentPage  : page,
+    previousPage : getPreviousPage(page),
+    nextPage     : getNextPage(page, limit, count),
+    totalPages   : Math.ceil(count / limit),
+    count,
+  };
+}

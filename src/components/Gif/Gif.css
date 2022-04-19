@@ -8,8 +8,11 @@
 
 .Gif img {
     max-width: 200px;
-    border-radius: 10%;
+    border-radius: 5px;
+    border: 2px solid #ff8398;
 }
 .Gif img:hover {
     opacity: 0.5;
+    box-shadow: 0px 0px 10px #ff4665;
+
 }

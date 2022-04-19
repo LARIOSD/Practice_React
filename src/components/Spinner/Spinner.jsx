@@ -4,7 +4,7 @@ import './Spinner.css';
 
 export default function Spinner() {
   return (
-    <div className="holis">
+    <div className="pac-spinner">
       <PacmanLoader
         color="#f30051"
         size={30}

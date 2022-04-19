@@ -5,6 +5,20 @@ import Gif from '../Gif/Gif';
 import './style.css';
 
 export default function ListOfGifs({ gifs }) {
+  console.log('gifs', gifs);
+
+  if (!gifs.length) {
+    return (
+      <div className="list">
+        <h3 className="App-title">
+          {' '}
+          {gifs.length}
+          {' '}
+          Gifs encontrados
+        </h3>
+      </div>
+    );
+  }
   return (
     <div className="listGifs">
       {gifs.map(({ id, url }) => (

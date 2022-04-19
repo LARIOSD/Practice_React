@@ -7,10 +7,9 @@
     background-color: #ff3f5c;
     border-radius: 0%;
     border-style: dotted;
-    box-shadow: 14px 0px 23px -16px rgba(0,0,0,0.80);
     justify-content: center;
     list-style:none;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     padding: 3px;
     text-align: center;
     text-decoration: none;
@@ -20,9 +19,16 @@ ul{
     padding:0;
     text-decoration: none;
 }
+.search{
+    font-weight: bold;
+}
 
 input{
     border-color: #ff8398;
-    text-align: center;
-    font-family: cursive;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 16px;
+    background-color: #383838;
+    color: #ffffff;
+    outline: none;
 }

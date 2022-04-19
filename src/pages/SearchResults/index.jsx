@@ -27,7 +27,7 @@ export default function SearchResults({ params }) {
       </div> */}
 
       {loading
-        ? <Spinner loading={loading}/>
+        ? <Spinner />
         : <ListOfGifs gifs={gifs} />}
 
     </div>

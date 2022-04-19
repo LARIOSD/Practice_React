@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="Search">
+        <label className="search" htmlFor="Search">
           Search
           <input id="Search" placeholder="Search a gif here..." onChange={handleChage} type="text" value={keyword} />
         </label>
